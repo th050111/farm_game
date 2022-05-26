@@ -1,0 +1,158 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.hidden {
+  display: none;
+}
+
+.ground {
+  display: flex;
+}
+
+.choose-tile {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.tile {
+  position: relative;
+  background-color: red;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+.tab-list {
+  position: relative;
+  top: 10px;
+  display: flex;
+  height: 30px;
+}
+.tab-list > .tab.selected {
+  position: relative;
+  height: 130%;
+  bottom: 30%;
+  line-height: calc(30px * 1.3);
+}
+
+.tab-list > .tab:hover:not(.selected) {
+  background-color: rgb(247, 189, 146);
+}
+.tab-list > .tab {
+  background-color: rgb(245, 217, 195);
+
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px 10px 0px 0px;
+  box-sizing: border-box;
+  line-height: 30px;
+  height: 100%;
+  width: 70px;
+}
+
+.item-row {
+  margin-top: 10px;
+  padding: 5px;
+
+  width: calc(100%-5px);
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  background-color: rgb(243, 243, 182);
+  border: 1px solid black;
+  margin: 2px;
+  width: 70px;
+  height: 70px;
+  overflow: scroll;
+}
+
+.item-container {
+  background-color: rgb(177, 245, 245);
+  height: 100%;
+  width: 60%;
+  overflow-y: scroll;
+}
+.inventory {
+  position: relative;
+}
+
+.main-container {
+  position: absolute;
+  top: 40px;
+  background-color: rgb(241, 241, 216);
+  display: flex;
+  padding: 10px;
+  width: 1000px;
+  height: 400px;
+  justify-content: space-around;
+}
+
+.inform-container {
+  width: 35%;
+  background-color: rgb(177, 245, 245);
+}
+
+.basic-inform {
+  position: relative;
+  background-color: rgb(241, 241, 216, 0.5);
+  border: 1px solid black;
+  border-radius: 0px 10px 10px 0px;
+  margin: 5%;
+  width: 90%;
+  height: 25%;
+  display: flex;
+}
+
+.basic-inform > .item-img {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}
+
+.basic-inform > .article {
+  margin: 2%;
+  width: 60%;
+  height: 90%;
+}
+
+.basic-inform .item-inform-container {
+  width: 100%;
+  height: 30%;
+}
+
+.detail-inform {
+  display: block;
+  width: 90%;
+  margin: 5%;
+  margin-top: -3%;
+  height: 40%;
+}
+.detail-inform > div.title {
+  text-align: center;
+  background-color: rgb(241, 241, 216, 0.5);
+  width: 30%;
+  border: 1px solid black;
+  border-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+.detail-inform > .doc {
+  width: 100%;
+  height: 80%;
+  border: 1px solid black;
+  border-radius: 0px 10px 10px 10px;
+  background-color: rgb(241, 241, 216, 0.5);
+}
+
+.btns {
+  margin: 5%;
+  background-color: blue;
+  width: 90%;
+  height: 20%;
+}

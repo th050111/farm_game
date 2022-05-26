@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ground"></div>
+
+    <button class="open-btn">open</button>
+    <button class="close-btn">close</button>
+    <div class="inventory hidden">
+      <div class="tab-list">
+        <div class="tab tab-main selected">main</div>
+        <div class="tab tab-crop">crop</div>
+        <div class="tab tab-seed">seed</div>
+        <div class="tab tab-item">item</div>
+      </div>
+      <div class="main-container">
+        <div class="item-container"></div>
+        <div class="inform-container">
+          <div class="basic-inform">
+            <img class="item-img" />
+            <div class="article">
+              <div class="item-inform-container">
+                name:
+                <sapn class="item-name"></sapn>
+              </div>
+              <div class="item-inform-container">
+                cnt:
+                <span class="item-cnt"></span>
+              </div>
+            </div>
+          </div>
+          <div class="detail-inform">
+            <div class="title">inform</div>
+            <div class="doc">
+              <span class="article">inform...</span>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="use-item">use</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
